@@ -1,13 +1,7 @@
 {
-<<<<<<< HEAD
   "name": "bjoernkw",
-  "version": "1.1.2",
-  "description": "Business card for Björn Wilmsmann, https://bjoernkw.com",
-=======
-  "name": "bitandbang",
   "version": "1.2.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
->>>>>>> upstream/master
+  "description": "Business card for Björn Wilmsmann, https://bjoernkw.com",
   "main": "index.js",
   "bin": {
     "bjoernkw": "./bin/card.js"
