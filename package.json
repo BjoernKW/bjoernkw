@@ -1,6 +1,6 @@
 {
   "name": "bjoernkw",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Business card for Björn Wilmsmann, https://bjoernkw.com",
   "main": "index.js",
   "bin": {
@@ -13,12 +13,18 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
     "lint": "standard",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "business-card",
-    "card"
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
   ],
   "author": "Björn Wilmsmann <bjoern@bjoernkw.com> (https://bjoernkw.com)",
   "license": "MIT",

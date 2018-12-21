@@ -21,7 +21,7 @@ const data = {
   web: chalk.cyan('https://bjoernkw.com'),
   twitter: chalk.cyan('https://twitter.com/bwilmsmann'),
   github: chalk.cyan('https://github.com/BjoernKW'),
-  npx: chalk.white('npx bjoernkw'),
+  npx: chalk.red('npx') + ' ' + chalk.white('bjoernkw'),
   labelWeb: chalk.white.bold('       Web:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
@@ -33,11 +33,19 @@ const newline = '\n'
 const heading = `${data.name} ${data.handle}`
 const working = `${data.work}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
+const npming = `${data.labelnpm}  ${data.npm}`
 const githubing = `${data.labelGitHub}  ${data.github}`
 const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output = heading + newline + newline + working + newline + newline + webing + newline + twittering + newline + githubing + newline + newline + carding
+const output = heading
+               + newline + newline
+               + working
+               + newline + newline
+               + webing + newline
+               + twittering + newline
+               + githubing + newline
+               + newline + carding
 
 fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))
