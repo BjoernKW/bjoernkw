@@ -7,4 +7,4 @@ Via npx:
 npx bjoernkw
 ```
 
-Thanks to [Tierney Cyren](https://github.com/bnb), [original repsitory](https://github.com/bnb/bitandbang)
+Thanks to [Tierney Cyren](https://github.com/bnb), [original repository](https://github.com/bnb/bitandbang)
