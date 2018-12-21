@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "bjoernkw",
   "version": "1.1.2",
   "description": "Business card for Björn Wilmsmann, https://bjoernkw.com",
+=======
+  "name": "bitandbang",
+  "version": "1.2.0",
+  "description": "A personal card for Tierney Cyren (@bitandbang)",
+>>>>>>> upstream/master
   "main": "index.js",
   "bin": {
     "bjoernkw": "./bin/card.js"
@@ -11,6 +17,9 @@
     "url": "https://github.com/bjoernkw/bjoernkw.git"
   },
   "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "lint": "standard",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,11 +28,13 @@
   ],
   "author": "Björn Wilmsmann <bjoern@bjoernkw.com> (https://bjoernkw.com)",
   "license": "MIT",
-  "dependencies": {
-    "boxen": "^2.1.0",
-    "chalk": "^2.4.1"
-  },
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
   "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
     "standard": "^12.0.1"
   }
 }
